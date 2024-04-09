@@ -7,11 +7,11 @@ const Sidenav = () => {
     const [isOpen, setIsOpen] = useState(false);
     const data=['java','node.js','.Net core','go','web servers','python','php','ruby','builder','Configure Paketo Buildpacks','Enable Application Monitoring','Create a Paketo Buildpack','Access the SBOM','Create a Custom Stack']
   return (
-    <div className=''>
+    <div className='flex flex-col h-screen'>
         <img src={photo} alt="" className='w-20 flex mx-auto mb-4' />
 
         <div className='relative overflow-hidden w-full px-4 h-full'>
-        <div className='relative inset-0 overflow-scroll'>
+        <div className='absolute inset-0 overflow-scroll px-4' style={{scrollbarWidth:'none'}}>
         <div className={`${theme==='dark'?'text-white  bg-[#272A54]':'text-black bg-[#E5DFFB]'} px-6 py-2 mb-3 rounded-md text-left`}>
             <Link to='/docs' className='block'><span >Getting Started</span></Link>
             </div>
