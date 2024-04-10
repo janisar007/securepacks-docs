@@ -3,3 +3,24 @@
     /* width: 200px;
     height: 200px; */
 }
+
+.gradient-border {
+    position: relative;
+    border-radius: 20px; /* Adjust as needed */
+}
+
+.gradient-border::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(to right, #8E24AA, #E91E63);
+    z-index: -1;
+    border-radius: inherit;
+}
+
+.gradient-border button:hover {
+    background: linear-gradient(to right, #8E24AA, #E91E63);
+}
