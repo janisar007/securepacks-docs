@@ -1,12 +1,10 @@
 .image{
     background-image: url('../155510056.png');
-    /* width: 200px;
-    height: 200px; */
+
 }
 
 .gradient-border {
     position: relative;
-    border-radius: 20px; /* Adjust as needed */
 }
 
 .gradient-border::before {
