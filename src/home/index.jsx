@@ -16,7 +16,7 @@ const Home = () => {
     <Navbar/>
    </div>
   
-   <div className='flex justify-center items-center mt-[7%] px-20 ml-auto mr-auto gap-40'>
+   <div className='flex justify-center items-center mt-[3%] px-20 ml-auto mr-auto gap-40'>
     <div className=''>
     <h1 className="font-bold text-3xl text-left mt-8 bg-gradient-to-r from-purple-600 to-pink-500 text-transparent bg-clip-text">"Minimum Complexity</h1>
       <h1 className='font-bold text-3xl ml-40 text-left bg-gradient-to-r from-purple-600 to-pink-500 text-transparent bg-clip-text'> Maximum Security"</h1>
@@ -34,9 +34,8 @@ const Home = () => {
  
 </div>
 <div className='flex justify-center mt-16'>
-  <div className='gradient-border'>
-    <button className='bg-[#0F172A]  py-3 px-6 border-2 border-transparent rounded' onClick={navigate('/docs')}>Get Started</button>
-    </div>
+ 
+  <button onClick={()=>navigate('/Getting Started')} className='bg-gradient-to-r from-purple-600 to-pink-500 text-white font-bold py-2 px-4 rounded-full'>Get Started</button>
 </div>
 </div>
    

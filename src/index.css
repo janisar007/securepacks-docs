@@ -5,8 +5,14 @@
 .light {
   @apply bg-[#9C50C7] text-black;
 }
+.light-dark {
+  @apply bg-[#FFFFFF] text-black;
+}
 
 .dark {
+  @apply bg-[#0F172A] text-white;
+}
+.dark-light {
   @apply bg-[#0F172A] text-white;
 }
 
