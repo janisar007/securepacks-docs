@@ -35,7 +35,7 @@ const Home = () => {
 </div>
 <div className='flex justify-center mt-16'>
  
-  <button onClick={()=>navigate('/Getting Started')} className='bg-gradient-to-r from-purple-600 to-pink-500 text-white font-bold py-2 px-4 rounded-full'>Get Started</button>
+  <button onClick={()=>navigate('/Getting-Started')} className='bg-gradient-to-r from-purple-600 to-pink-500 text-white font-bold py-2 px-4 rounded-full'>Get Started</button>
 </div>
 </div>
    

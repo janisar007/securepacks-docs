@@ -10,8 +10,8 @@ const Navbar = () => {
 
   return (
     <>   
-     <div className={`flex justify-end sticky gap-5 top-0 px-5 py-4 right-14 text-lg font-semibold border-b capitalize ${theme === 'dark' ? 'bg-[#0F172A] text-white' : 'bg-white text-black'}`}>
-     <Link to="/Getting Started">docs</Link>
+     <div className={`flex justify-end sticky gap-5 top-0 px-5 py-4 right-14 text-lg font-semibold capitalize ${theme === 'dark' ? 'bg-[#0F172A] text-white' : 'bg-white text-black'}`}>
+     <Link to="/Getting-Started">docs</Link>
         <span>community</span>
         <span>resource</span>
         <span>blog</span>

@@ -6,13 +6,7 @@ import Navbar from "../Navbar";
 const Getting = () => {
     const { theme, toggleTheme } = useContext(ThemeContext);
     return (
-        <>   <div className='flex flex-auto min-w-0'>
-        <div className={`sticky top-0 h-[100vh] w-[270px] min-w-[270px] border-r ${theme==='dark'?' border-gray-500':'border-gray-200 '}`}>
-            <Sidenav/>
-        </div>
-        <div className={`flex flex-col flex-auto min-h-screen min-w-0 relative w-full border-b ${theme==='dark'?' border-gray-500':'border-gray-200 '} `}>
-            <Navbar/>
-            <div className='h-full flex flex-auto flex-col justify-between'>
+        <>  
         <div className="text-left ml-7 mt-14 space-y-4">
             <h2 className="font-bold text-2xl">Getting Started</h2>
             <p>Get your journey underway with Securepacks using our Builder, the pack CLI, and Docker.</p>
@@ -47,9 +41,6 @@ const Getting = () => {
             <h3 className="font-bold text-xl mt-6">Taking Your Image to Greater Heights</h3>
             <p><code className="bg-gray-400 px-1 rounded">pack</code> utilizes buildpacks to effortlessly craft OCI images that are runnable nearly anywhere. Feel free to deploy your newfound image to your preferred cloud platform!</p>
         </div>
-        </div>
-        </div>
-    </div>
         </>
     )
 }

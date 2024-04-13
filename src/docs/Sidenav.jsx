@@ -17,10 +17,10 @@ const Sidenav = () => {
         <div className='relative overflow-hidden w-full px-4 h-full'>
         <div className='absolute inset-0 overflow-scroll px-4' style={{scrollbarWidth:'none'}}>
         <div className={`${theme==='dark'?'text-white  bg-[#272A54]':'text-black bg-[#E5DFFB]'} px-6 py-2 mb-3 rounded-md text-left`}>
-            <Link to='/Getting Started' className='block'><span >Getting Started</span></Link>
+            <Link to='/Getting-Started' className='block'><span >Getting Started</span></Link>
             </div>
             <div className={`${theme === 'dark' ? 'text-white bg-[#272A54]' : 'text-black bg-[#E5DFFB]'} px-6 py-2 mb-3 rounded-md text-left`}>
-          <Link to='/How it Works' className='block'><span>How it Works</span></Link>
+          <Link to='/How-it-Works' className='block'><span>How it Works</span></Link>
         </div>
             <div 
       className={`${theme==='dark'?'text-white  bg-[#272A54]':'text-black bg-[#E5DFFB]'} px-6 py-2 rounded-md text-left mb-3`} 
@@ -35,7 +35,7 @@ const Sidenav = () => {
     {isOpen && (
         <div className="flex flex-col gap-3">
             {data.map((item, index) => (
-                <Link to='/docs' key={index} className={`${theme==='dark'?'text-white  bg-[#272A54]':'text-black bg-[#E5DFFB]'} px-6 py-2 rounded-md text-left capitalize`}>
+                <Link to={`/${item}`} key={index} className={`${theme==='dark'?'text-white  bg-[#272A54]':'text-black bg-[#E5DFFB]'} px-6 py-2 rounded-md text-left capitalize`}>
                 {item}
                 </Link>
             ))}
