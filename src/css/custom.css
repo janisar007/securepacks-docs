@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root {
   --ifm-color-primary:#3C5B6F; /* Pink */
   --ifm-color-primary-dark: #ad1457;
@@ -61,4 +62,140 @@
     var(--ifm-color-emphasis-200) 0%,
     var(--ifm-color-emphasis-100) 100%
   );
+}
+
+
+.custom-hero {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f0f0;
+  padding: 50px 0;
+  text-align: center;
+  height: 70vh;
+  width: 100%;
+
+  
+}
+
+.hero-content {
+  max-width: auto;
+  margin: 0 auto;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-description {
+  width: 60%;
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.hero-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #0056b3;
+}
+
+
+.custom-features {
+  background-color: #ffffff;
+  padding: 80px 0;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+
+.features-container {
+  max-width: 800px;
+  margin: 0 auto;
+  width: 50%;
+}
+.image-section{
+  width: 50%;
+}
+
+.section-title {
+  font-size: 8px;
+  font-weight: ;
+  margin-bottom: 40px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.feather {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.feature p {
+  font-size: 18px;
+  color: #666666;
+}
+
+
+.custom-benefits {
+  background-color: #f8f8f8;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.benefits-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.benefit {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.feather {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.benefit-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.benefit p {
+  font-size: 18px;
+  color: #666666;
 }
