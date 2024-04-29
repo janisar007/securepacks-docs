@@ -1,57 +1,54 @@
-import { themes as prismThemes } from "prism-react-renderer";
-import type { Config } from "@docusaurus/types";
-import type * as Preset from "@docusaurus/preset-classic";
-
+import {themes as prismThemes} from 'prism-react-renderer';
+import type {Config} from '@docusaurus/types';
+import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: "initializ Documentation",
-  tagline: "AI UNIFIED DEVSECOPS PLATFORM",
-  favicon: "img/logo_new.png",
+  title: 'My Site',
+  tagline: 'Dinosaurs are cool',
+  favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: "https://your-docusaurus-site.example.com",
+  url: 'https://your-docusaurus-site.example.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/Documentation-Template/",
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "initializ", // Usually your GitHub org/user name.
-  projectName: "Documentation-Template", // Usually your repo name.
+  organizationName: 'facebook', // Usually your GitHub org/user name.
+  projectName: 'docusaurus', // Usually your repo name.
 
-  onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: "en",
-    locales: ["en"],
+    defaultLocale: 'en',
+    locales: ['en'],
   },
 
   presets: [
     [
-      "classic",
+      'classic',
       {
         docs: {
-          sidebarPath: "./sidebars.ts",
+          sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/initializ/Documentation-Template/edit/main/",
-          showLastUpdateAuthor: false,
-          showLastUpdateTime: false,
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/initializ/Documentation-Template/edit/main/",
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
-          customCss: "./src/css/custom.css",
+          customCss: './src/css/custom.css',
         },
       } satisfies Preset.Options,
     ],
@@ -59,85 +56,76 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: "img/logo_new.png",
-
+    image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: "Initializ Securepacks",
+      title: 'My Site',
       logo: {
-        alt: "Initializ Logo",
-        src: "img/logo_new.png",
+        alt: 'My Site Logo',
+        src: 'img/logo.svg',
       },
       items: [
         {
-          type: "docSidebar",
-          sidebarId: "DocsSidebar",
-          position: "left",
-          label: "Docs",
+          type: 'docSidebar',
+          sidebarId: 'tutorialSidebar',
+          position: 'left',
+          label: 'Tutorial',
         },
-        { to: "/blog", label: "Blog", position: "left" },
+        {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: "https://github.com/facebook/docusaurus",
-          label: "GitHub",
-          position: "right",
-        },
-        {
-          type: "search",
-          position: "right",
+          href: 'https://github.com/facebook/docusaurus',
+          label: 'GitHub',
+          position: 'right',
         },
       ],
     },
     footer: {
-      style: "dark",
+      style: 'dark',
       links: [
         {
-          title: "Docs",
+          title: 'Docs',
           items: [
             {
-              label: "Docs",
-              to: "/docs/intro",
+              label: 'Tutorial',
+              to: '/docs/intro',
             },
           ],
         },
         {
-          title: "Community",
+          title: 'Community',
           items: [
             {
-              label: "Discord",
-              href: "https://discord.com/invite/3nXfym7D87",
+              label: 'Stack Overflow',
+              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
             },
             {
-              label: "Twitter",
-              href: "https://twitter.com/initializ?s=11&t=976ERlYL63HY38fHzrS5_w",
+              label: 'Discord',
+              href: 'https://discordapp.com/invite/docusaurus',
+            },
+            {
+              label: 'Twitter',
+              href: 'https://twitter.com/docusaurus',
             },
           ],
         },
         {
-          title: "More",
+          title: 'More',
           items: [
             {
-              label: "Blog",
-              to: "/blog",
+              label: 'Blog',
+              to: '/blog',
             },
             {
-              label: "GitHub",
-              href: "https://github.com/initializ/Documentation-Template",
+              label: 'GitHub',
+              href: 'https://github.com/facebook/docusaurus',
             },
           ],
         },
       ],
-      copyright: `© 2024, Made with❤️ by initializ inc.`,
+      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
     },
     prism: {
-      theme: prismThemes.jettwaveLight, // Light code theme
-      darkTheme: prismThemes.dracula, // Dark code theme
-      additionalLanguages: ["java", "swift"], // Additional languages for syntax highlighting
-    },
-    algolia: {
-      appId: "0WDU4T6PDO",
-      apiKey: "14e8ed0c206549035790a1654a58c9ab",
-      indexName: "initializio",
-      contextualSearch: true, // Show contextual search results
-      searchParameters: {}, // Additional search parameters
+      theme: prismThemes.github,
+      darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
 };

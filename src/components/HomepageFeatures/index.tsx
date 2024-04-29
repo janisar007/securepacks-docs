@@ -1,12 +1,6 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
-import go from '../../../static/img/pngwing.com.png'
-import node from '../../../static/img/nodejs.png'
-import java from '../../../static/img/java.png'
-import python from '../../../static/img/python.png'
-import netcore from '../../../static/img/netcore.png'
-
 
 type FeatureItem = {
   title: string;
@@ -14,18 +8,61 @@ type FeatureItem = {
   description: JSX.Element;
 };
 
+const FeatureList: FeatureItem[] = [
+  {
+    title: 'Easy to Use',
+    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    description: (
+      <>
+        Docusaurus was designed from the ground up to be easily installed and
+        used to get your website up and running quickly.
+      </>
+    ),
+  },
+  {
+    title: 'Focus on What Matters',
+    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    description: (
+      <>
+        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
+        ahead and move your docs into the <code>docs</code> directory.
+      </>
+    ),
+  },
+  {
+    title: 'Powered by React',
+    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    description: (
+      <>
+        Extend or customize your website layout by reusing React. Docusaurus can
+        be extended while reusing the same header and footer.
+      </>
+    ),
+  },
+];
+
+function Feature({title, Svg, description}: FeatureItem) {
+  return (
+    <div className={clsx('col col--4')}>
+      <div className="text--center">
+        <Svg className={styles.featureSvg} role="img" />
+      </div>
+      <div className="text--center padding-horiz--md">
+        <Heading as="h3">{title}</Heading>
+        <p>{description}</p>
+      </div>
+    </div>
+  );
+}
 
 export default function HomepageFeatures(): JSX.Element {
   return (
     <section className={styles.features}>
       <div className="container">
-        <div className=" grid grid-cols-5 gap-5 p-20">
-        <img src={go} alt="" style={{width:"80%"}}/>
-        <img src={node} alt="" style={{width:"80%"}}/>
-        <img src={java} alt="" style={{width:"80%"}}/>
-        <img src={python} alt="" style={{width:"80%"}}/>
-        <img src={netcore} alt="" style={{width:"80%"}}/>
-
+        <div className="row">
+          {FeatureList.map((props, idx) => (
+            <Feature key={idx} {...props} />
+          ))}
         </div>
       </div>
     </section>
