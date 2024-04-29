@@ -5,7 +5,7 @@ import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
-import logo from '../../static/img/logo_new.png'
+// import logo from '../../static/img/logo_new.png'
 
 const Header = () => {
   return (
@@ -21,7 +21,7 @@ const HeroSection = () => {
       <div className="hero-content">
         <h1 className="hero-title">Secure Your Deployments with SecurePack</h1>
         <p className="hero-description">SecurePack is a powerful buildpack solution that enhances the security and reliability of your application deployments.</p>
-        <a href='/docs/introduction'>
+        <a href='../docs/introduction'>
         <button className="hero-button  " >Explore Documentation</button></a>
       </div>
     </section>
@@ -87,7 +87,7 @@ const FeaturesSection = () => {
         <p>Compatibility with a wide range of platforms and environments</p>
       </div>
     </div>
-    <div className='image-section'><img src={logo} alt="" style={{width:"50%"}} /></div>
+    {/* <div className='image-section'><img src={logo} alt="" style={{width:"50%"}} /></div> */}
   </section>
   );
 };
