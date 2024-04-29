@@ -3,8 +3,8 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Securepacks Documentation',
+  tagline: 'Minimum Complexcity, Maximum Security',
   favicon: 'img/logo_new.png',
 
   // Set the production url of your site here
@@ -58,9 +58,9 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'Securepacks',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Surepacks Logo',
         src: 'img/logo_new.png',
       },
       items: [
