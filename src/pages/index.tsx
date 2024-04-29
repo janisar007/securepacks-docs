@@ -21,7 +21,8 @@ const HeroSection = () => {
       <div className="hero-content">
         <h1 className="hero-title">Secure Your Deployments with SecurePack</h1>
         <p className="hero-description">SecurePack is a powerful buildpack solution that enhances the security and reliability of your application deployments.</p>
-        <button className="hero-button">Explore Documentation</button>
+        <a href='/docs/introduction'>
+        <button className="hero-button  " >Explore Documentation</button></a>
       </div>
     </section>
   );

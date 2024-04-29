@@ -1,30 +1,201 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
-
-/* You can override the default Infima variables here. */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
+  --ifm-color-primary:#3C5B6F; /* Pink */
+  --ifm-color-primary-dark: #ad1457;
+  --ifm-color-primary-darker: #880e4f;
+  --ifm-color-primary-darkest: #6a1b9a;
+  --ifm-color-primary-light: #f06292;
+  --ifm-color-primary-lighter: #f48fb1;
+  --ifm-color-primary-lightest: #fce4ec; /* Light Pink */
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --doc-sidebar-width: 250px !important;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+[data-theme="dark"] {
+  --ifm-color-primary: #9c27b0; /* Violet */
+  --ifm-color-primary-dark: #7b1fa2;
+  --ifm-color-primary-darker: #6a1b9a;
+  --ifm-color-primary-darkest: #4a148c;
+  --ifm-color-primary-light: #ab47bc;
+  --ifm-color-primary-lighter: #ba68c8;
+  --ifm-color-primary-lightest: #ce93d8; /* Light Violet */
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  background-color: #13111a; /* Dark background color */
+}
+
+[data-theme="light"] .DocSearch {
+  /* --docsearch-primary-color: var(--ifm-color-primary); */
+  /* --docsearch-text-color: var(--ifm-font-color-base); */
+  --docsearch-muted-color: var(--ifm-color-secondary-darkest);
+  --docsearch-container-background: rgba(94, 100, 112, 0.7);
+  /* Modal */
+  --docsearch-modal-background: var(--ifm-color-secondary-lighter);
+  /* Search box */
+  --docsearch-searchbox-background: var(--ifm-color-secondary);
+  --docsearch-searchbox-focus-background: var(--ifm-color-white);
+  /* Hit */
+  --docsearch-hit-color: var(--ifm-font-color-base);
+  --docsearch-hit-active-color: var(--ifm-color-white);
+  --docsearch-hit-background: var(--ifm-color-white);
+  /* Footer */
+  --docsearch-footer-background: var(--ifm-color-white);
+}
+
+[data-theme="dark"] .DocSearch {
+  --docsearch-text-color: var(--ifm-font-color-base);
+  --docsearch-muted-color: var(--ifm-color-secondary-darkest);
+  --docsearch-container-background: rgba(47, 55, 69, 0.7);
+  /* Modal */
+  --docsearch-modal-background: var(--ifm-background-color);
+  /* Search box */
+  --docsearch-searchbox-background: var(--ifm-background-color);
+  --docsearch-searchbox-focus-background: var(--ifm-color-black);
+  /* Hit */
+  --docsearch-hit-color: var(--ifm-font-color-base);
+  --docsearch-hit-active-color: var(--ifm-color-white);
+  --docsearch-hit-background: var(--ifm-color-emphasis-100);
+  /* Footer */
+  --docsearch-footer-background: var(--ifm-background-surface-color);
+  --docsearch-key-gradient: linear-gradient(
+    -26.5deg,
+    var(--ifm-color-emphasis-200) 0%,
+    var(--ifm-color-emphasis-100) 100%
+  );
+}
+
+
+.custom-hero {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f0f0;
+  padding: 50px 0;
+  text-align: center;
+  height: 70vh;
+  width: 100%;
+
+  
+}
+
+.hero-content {
+  max-width: auto;
+  margin: 0 auto;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-description {
+  width: 60%;
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.hero-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #0056b3;
+}
+
+
+.custom-features {
+  background-color: #ffffff;
+  padding: 80px 0;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+
+.features-container {
+  max-width: 800px;
+  margin: 0 auto;
+  width: 50%;
+}
+.image-section{
+  width: 50%;
+}
+
+.section-title {
+  font-size: 8px;
+  font-weight: ;
+  margin-bottom: 40px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.feather {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.feature p {
+  font-size: 18px;
+  color: #666666;
+}
+
+
+.custom-benefits {
+  background-color: #f8f8f8;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.benefits-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.benefit {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.feather {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.benefit-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.benefit p {
+  font-size: 18px;
+  color: #666666;
 }
