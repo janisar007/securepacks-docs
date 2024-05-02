@@ -1,15 +1,8 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
-
 import logo from '../../static/img/logo_new.png';
-
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import Heading from '@theme/Heading';
-import styles from './index.module.css';
-// import logo from '../../static/img/logo_new.png'
-
-
+ 
 const Header = () => {
   return (
     <header className="hero">
@@ -17,27 +10,19 @@ const Header = () => {
     </header>
   );
 };
-
+ 
 const HeroSection = () => {
   return (
-
     <section id="hero" className="hero">
       <div className="hero__content">
         <h1 className="hero__title">Secure Your Deployments with SecurePack</h1>
         <p className="hero__subtitle">SecurePack is a powerful buildpack solution that enhances the security and reliability of your application deployments.</p>
         <Link className="hero__button button button--primary" to="/docs/">Explore Documentation</Link>
-
-    <section id="hero" className="custom-hero">
-      <div className="hero-content">
-        <h1 className="hero-title">Secure Your Deployments with SecurePack</h1>
-        <p className="hero-description">SecurePack is a powerful buildpack solution that enhances the security and reliability of your application deployments.</p>
-        <a href='../docs/introduction'>
-        <button className="hero-button  " >Explore Documentation</button></a>
       </div>
     </section>
   );
 };
-
+ 
 const FeaturesSection = () => {
   return (
     <section id="features" className="features">
@@ -97,15 +82,10 @@ const FeaturesSection = () => {
           </div>
         </div>
       </div>
-
     </section>
-
-    </div>
-    {/* <div className='image-section'><img src={logo} alt="" style={{width:"50%"}} /></div> */}
-  </section>
   );
 };
-
+ 
 const BenefitsSection = () => {
   return (
     <section id="benefits" className="benefits">
@@ -179,7 +159,7 @@ const BenefitsSection = () => {
     </section>
   );
 };
-
+ 
 const HomePage = () => {
   return (
     <div className="homepage">
@@ -192,21 +172,16 @@ const HomePage = () => {
     </div>
   );
 };
-
+ 
 function HomepageHeader() {
   return (
     <HomePage/>
   );
 }
-
+ 
 export default function Home(): JSX.Element {
   return (
-
     <Layout>
-    <Layout
-      title={`Initializ`}
-      description="Description will go into a meta tag in <head />">
-
       <HomepageHeader />
     </Layout>
   );
