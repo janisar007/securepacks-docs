@@ -3,14 +3,6 @@ import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
 // import logo from '../../static/img/logo_new.png';
  
-const Header = () => {
-  return (
-    <header className="hero">
-      {/* Content */}
-    </header>
-  );
-};
- 
 const HeroSection = () => {
   return (
     <section id="hero" className="hero">
@@ -163,7 +155,6 @@ const BenefitsSection = () => {
 const HomePage = () => {
   return (
     <div className="homepage">
-      <Header />
       <main>
         <HeroSection />
         <FeaturesSection />
