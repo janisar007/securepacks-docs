@@ -27,28 +27,3 @@ SecurePacks is a revolutionary tool designed to enhance the security of your sof
 
 
 Experience the power of SecurePacks and take your container security to new heights. Simplify your packaging process, mitigate vulnerabilities, and deploy with confidence. Try SecurePacks today and embark on a journey towards a safer, more resilient software ecosystem.
-
-[Get Started](https://chat.openai.com/c/link)
-
-
-``` go
-fmt.prinln("hello")
-```
-
-:::note
-
-Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
-
-:::
-
-:::tip
-
-Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
-
-:::
-
-:::note[Your Title **with** some _Markdown_ `syntax`!]
-
-Some **content** with some _Markdown_ `syntax`.
-
-:::
