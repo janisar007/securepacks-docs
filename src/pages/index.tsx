@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
-import logo from '../../static/img/logo_new.png';
+// import logo from '../../static/img/logo_new.png';
  
 const Header = () => {
   return (
@@ -17,7 +17,7 @@ const HeroSection = () => {
       <div className="hero__content">
         <h1 className="hero__title">Secure Your Deployments with SecurePack</h1>
         <p className="hero__subtitle">SecurePack is a powerful buildpack solution that enhances the security and reliability of your application deployments.</p>
-        <Link className="hero__button button button--primary" to="/docs/">Explore Documentation</Link>
+        <Link className="hero__button button button--primary" to="/docs/introduction">Explore Documentation</Link>
       </div>
     </section>
   );
