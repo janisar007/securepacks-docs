@@ -9,6 +9,7 @@
   --ifm-color-primary-lightest: #fce4ec; /* Light Pink */
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --doc-sidebar-width: 250px !important;
+  font-family: "poppins", sans-serif;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -21,6 +22,7 @@
   --ifm-color-primary-lighter: #ba68c8;
   --ifm-color-primary-lightest: #ce93d8; /* Light Violet */
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
   background-color: #13111a; /* Dark background color */
 }
 
@@ -63,27 +65,56 @@
     var(--ifm-color-emphasis-100) 100%
   );
 }
-
-
-.custom-hero {
-  font-family: 'Poppins', sans-serif;
-  background-color: #f0f0f0;
-  padding: 50px 0;
-  text-align: center;
-  height: 70vh;
-  width: 100%;
-
-  
+body {
+  font-family: 'Poppins', sans-serif; /* Change 'Poppins' to your desired font */
 }
-
-.hero-content {
-  max-width: auto;
-  margin: 0 auto;
-  padding-top: 100px;
+/* Custom CSS */
+.hero__content{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  margin-top: 2%;
+
+}
+[data-theme="light"] .hero {
+  background-color: var(--ifm-color-primary-light);
+}
+
+[data-theme="dark"] .hero {
+  /* Background color for dark mode */
+  background-color: var(--ifm-color-primary-darkest);
+}
+.section_title{
+  font-family: "poppins", sans-serif;
+}
+
+
+.hero {
+
+  background-color: var(--header-background-color);  
+}
+.hero__title{
+  font-family: "poppins", sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+
+}
+
+.featur{
+  display: flex;
+  justify-content: space-between;
+  padding: 6%;
+}
+.features{
+  width: 60%;
+
+}
+
+.benefits{
+  width: 50%;
 }
 
 .hero-title {

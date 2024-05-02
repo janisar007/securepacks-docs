@@ -1,14 +1,13 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
-// import logo from '../../static/img/logo_new.png';
  
 const HeroSection = () => {
   return (
     <section id="hero" className="hero">
       <div className="hero__content">
-        <h1 className="hero__title">Secure Your Deployments with SecurePack</h1>
-        <p className="hero__subtitle">SecurePack is a powerful buildpack solution that enhances the security and reliability of your application deployments.</p>
+        <h1 style={{fontFamily:'"poppins",sans-serif'}}>Secure Your Deployments with SecurePack</h1>
+        <p className="">SecurePack is a powerful buildpack solution that enhances the security and reliability of your application deployments.</p>
         <Link className="hero__button button button--primary" to="/docs/introduction">Explore Documentation</Link>
       </div>
     </section>
@@ -19,7 +18,8 @@ const FeaturesSection = () => {
   return (
     <section id="features" className="features">
       <div className="container">
-        <h2 className="section__title">Key Features</h2>
+        <h5 className="section_title">Key Features</h5>
+        <h1 className='hero__title'>Secure, Reliable, and Scalable</h1>
         <div className="feature-container">
           <div className="feature">
             <svg
@@ -157,8 +157,10 @@ const HomePage = () => {
     <div className="homepage">
       <main>
         <HeroSection />
+        <div className='featur'>
         <FeaturesSection />
         <BenefitsSection />
+        </div>
       </main>
     </div>
   );
