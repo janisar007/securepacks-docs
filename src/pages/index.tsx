@@ -1,6 +1,8 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
+import Language from './language';
+import Video from './Video';
  
 const HeroSection = () => {
   return (
@@ -18,14 +20,14 @@ const FeaturesSection = () => {
   return (
     <section id="features" className="features">
       <div className="container">
-        <h5 className="section_title">Key Features</h5>
-        <h1 className='hero__title'>Secure, Reliable, and Scalable</h1>
+        <h2 className="section__title">Key Features</h2>
         <div className="feature-container">
           <div className="feature">
+            <span className='tick'>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
+              width="10"
+              height="10"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
@@ -36,9 +38,11 @@ const FeaturesSection = () => {
             >
               <polyline points="20 6 9 17 4 12" />
             </svg>
+            </span>
             <p>Secure your deployments with advanced security features</p>
           </div>
           <div className="feature">
+          <span className='tick'>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -51,11 +55,14 @@ const FeaturesSection = () => {
               strokeLinejoin="round"
               className="feather feather-check"
             >
+              
               <polyline points="20 6 9 17 4 12" />
             </svg>
+            </span>
             <p>Easy deployment and integration with your existing workflows</p>
           </div>
           <div className="feature">
+          <span className='tick'>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -70,6 +77,65 @@ const FeaturesSection = () => {
             >
               <polyline points="20 6 9 17 4 12" />
             </svg>
+            </span>
+            <p>Compatibility with a wide range of platforms and environments</p>
+          </div>
+          <div className="feature">
+            <span className='tick'>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="10"
+              height="10"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="feather feather-check"
+            >
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+            </span>
+            <p>Secure your deployments with advanced security features</p>
+          </div>
+          <div className="feature">
+          <span className='tick'>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="feather feather-check"
+            >
+              
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+            </span>
+            <p>Easy deployment and integration with your existing workflows</p>
+          </div>
+          <div className="feature">
+          <span className='tick'>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="feather feather-check"
+            >
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+            </span>
             <p>Compatibility with a wide range of platforms and environments</p>
           </div>
         </div>
@@ -95,7 +161,7 @@ const BenefitsSection = () => {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="feather feather-shield"
+              className="feather1 feather-shield"
             >
               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
             </svg>
@@ -115,7 +181,7 @@ const BenefitsSection = () => {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="feather feather-tool"
+              className="feather1 feather-tool"
             >
               <path d="M4 21v-7l9-9 7 7-9 9z" />
             </svg>
@@ -135,7 +201,7 @@ const BenefitsSection = () => {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="feather feather-layers"
+              className="feather1 feather-layers"
             >
               <polygon points="12 2 2 7 12 12 22 7 12 2" />
               <polyline points="2 17 12 22 22 17" />
@@ -157,10 +223,12 @@ const HomePage = () => {
     <div className="homepage">
       <main>
         <HeroSection />
+        {/* <Language/> */}
         <div className='featur'>
         <FeaturesSection />
         <BenefitsSection />
         </div>
+        <Video/>
       </main>
     </div>
   );
