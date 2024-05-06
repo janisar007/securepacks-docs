@@ -9,6 +9,9 @@
   --ifm-color-primary-lightest: #fce4ec; /* Light Pink */
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --doc-sidebar-width: 250px !important;
+  --ifm-font-family-base: : "poppins", sans-serif;
+  --ifm-heading-font-family: "poppins", sans-serif ;
+  --ifm-font-family-monospace: : "poppins", sans-serif;
   font-family: "poppins", sans-serif;
 }
 
@@ -18,7 +21,8 @@
   --ifm-color-primary-dark: #7b1fa2;
   --ifm-color-primary-darker: #6a1b9a;
   --ifm-color-primary-darkest: #4a148c;
-  --ifm-color-primary-light: #ab47bc;
+  --ifm-color-primary-light: #62e3f0;
+  --ifm-color-primary-light-blue: #62e3f0;
   --ifm-color-primary-lighter: #ba68c8;
   --ifm-color-primary-lightest: #ce93d8; /* Light Violet */
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
@@ -42,6 +46,7 @@
   --docsearch-hit-background: var(--ifm-color-white);
   /* Footer */
   --docsearch-footer-background: var(--ifm-color-white);
+  font-family: "poppins", sans-serif;
 }
 
 [data-theme="dark"] .DocSearch {
@@ -63,12 +68,10 @@
     -26.5deg,
     var(--ifm-color-emphasis-200) 0%,
     var(--ifm-color-emphasis-100) 100%
+    font-family: "poppins", sans-serif;
   );
 }
-body {
-  font-family: 'Poppins', sans-serif; /* Change 'Poppins' to your desired font */
-}
-/* Custom CSS */
+/* header */
 .hero__content{
   display: flex;
   flex-direction: column;
@@ -79,22 +82,19 @@ body {
 
 }
 [data-theme="light"] .hero {
-  background-color: var(--ifm-color-primary-light);
+  background-color: #DFD0B8;
 }
 
 [data-theme="dark"] .hero {
-  /* Background color for dark mode */
-  background-color: var(--ifm-color-primary-darkest);
+  background-color: #153448;
+}
+.hero { 
+  padding: 7rem 2rem;
 }
 .section_title{
   font-family: "poppins", sans-serif;
 }
 
-
-.hero {
-
-  background-color: var(--header-background-color);  
-}
 .hero__title{
   font-family: "poppins", sans-serif;
   font-size: 36px;
@@ -103,10 +103,19 @@ body {
 
 }
 
+
+/* main */
 .featur{
   display: flex;
   justify-content: space-between;
-  padding: 6%;
+  gap: 20px;
+  padding: 4%;
+}
+
+/* key feature */
+.tick{
+  color: #10ec7e;
+  font-size: 10px;
 }
 .features{
   width: 60%;
@@ -167,20 +176,18 @@ body {
 
 .section-title {
   font-size: 8px;
-  /* font-weight: ; */
   margin-bottom: 40px;
 }
 
 .feature {
   display: flex;
   align-items: center;
-  justify-content: center;
   margin-bottom: 20px;
 }
 
 .feather {
-  width: 40px;
-  height: 40px;
+  width: 25px;
+  height: 25px;
   margin-right: 20px;
 }
 
@@ -207,18 +214,20 @@ body {
   margin-bottom: 40px;
 }
 
+
+/* benefits */
 .benefit {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
-
-.feather {
-  width: 50px;
-  height: 50px;
+.feather1 {
+  width: 60px;
+  height: 40px;
   margin-right: 20px;
 }
+
 
 .benefit-title {
   font-size: 20px;
@@ -229,4 +238,36 @@ body {
 .benefit p {
   font-size: 18px;
   color: #666666;
+}
+
+
+/* videosection */
+
+[data-theme="light"] .video-section {
+  background-color: #DFD0B8;
+}
+
+[data-theme="dark"] .video-section {
+  background-color: #153448;
+}
+.video-section{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding:8% 6%;
+}
+
+.video{
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  
+}
+.info{
+  width: 50%;
+}
+.video-iframe{
+ border:#fff 4px solid;
+ border-radius:5px;
+
 }
