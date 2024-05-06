@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { useRef } from 'react';
 
 const Video = () => {
+  const videoRef = useRef(null);
+
+  const handleVideoEnded = () => {
+    videoRef.current.play();
+  };
   return (
     <div className='video-section'>
       <div className='info'>
@@ -11,16 +16,15 @@ const Video = () => {
         <p>Ages: You can mention the target age group for the content here.</p>
       </div>
       <div className='video'>
-        <iframe
-        width="500px"
-        height="300px"
-        src="https://collegemanage.s3.ap-south-1.amazonaws.com/812117/drawing/SecurePacks%20%281%29.mp4"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-        title="SecurePack"
-        className='video-iframe'
-        
-      ></iframe>
+        <video
+          width="500px"
+          height="300px"
+          src="https://collegemanage.s3.ap-south-1.amazonaws.com/812117/drawing/SecurePacks%20%281%29.mp4"
+          autoPlay
+          controls
+          onEnded={handleVideoEnded}
+          ref={videoRef}
+        ></video>
       </div>
     </div>
   );
