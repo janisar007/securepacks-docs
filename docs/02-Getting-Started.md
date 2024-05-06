@@ -13,9 +13,10 @@ Welcome aboard! Securepacks empowers you to effortlessly craft fully operational
 
 To kickstart your journey, ensure you have Docker and the pack CLI tool installed on your system. Follow the simple steps below to get set up:
 
-1. **Docker Installation**: Install [Docker](https://initializ.ai) by following this guide.
+1. **Docker Installation**: Install [Docker](https://docs.docker.com/engine/install/) by following this guide.
  
-2. **pack CLI Installation**: Install the pack CLI tool with our easy-to-follow guide 
+2. **pack CLI Installation**: Install the [pack](https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/) CLI tool with our easy-to-follow guide 
+
 
 
 
