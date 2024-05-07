@@ -1,16 +1,37 @@
-import React from 'react';
+import React, {useState} from 'react';
+import {useHistory} from 'react-router-dom'
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
 import Language from './language';
 import Video from './Video';
+import DialogBox from '../components/HomepageFeatures/DialogBox';
+
+import "./index.module.css";
  
 const HeroSection = () => {
+  const history = useHistory();
+  const [isOpen, setIsOpen] = useState(false);
+  
+  const openDialog = () => {
+    setIsOpen(true);
+  }
+
+  const closeDialog = () => {
+    setIsOpen(false);
+    history.push("/docs/introduction");
+
+  }
+
   return (
-    <section id="hero" className="hero">
+    <section id="hero" className="hero modalOverlay">
       <div className="hero__content">
         <h1 style={{fontFamily:'"poppins",sans-serif'}}>Secure Your Deployments with SecurePack</h1>
         <p className="">SecurePack is a powerful buildpack solution that enhances the security and reliability of your application deployments.</p>
-        <Link className="hero__button button button--primary" to="/docs/introduction">Explore Documentation</Link>
+        <div>
+        <Link className="hero__button button button--primary" onClick={openDialog}>Explore Documentation</Link>
+        {isOpen && <DialogBox onClose={closeDialog}/>}
+        </div>
+        
       </div>
     </section>
   );

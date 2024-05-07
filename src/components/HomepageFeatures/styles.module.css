@@ -9,3 +9,112 @@
   height: 200px;
   width: 200px;
 }
+
+
+/* for overlaying dialogbox */
+.modalOverlay {
+  /* position: absolute; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.modalContent {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 100px;
+  border-radius: 8px;
+  max-height: 80%;
+  min-width: 40%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  
+}
+
+.formComponent {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  padding-left: 18px;
+  padding-right: 18px;
+  background-color: white;
+
+  width: 100%;
+
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.crossIcon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.dialogbox {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.submitButton {
+  background-color: #24A0AD;
+  border: 0;
+  padding: 5px;
+  border-radius: 4px;
+  width: 40%;
+  color: white;
+}
+
+.inputFields {
+  border: 1px solid #D3D3D3;
+  border-radius: 4px;
+  height: 35px;
+  padding: 8px;
+}
+
+.formLabel {
+  color: #6B7280;
+}
+
+.inputFields:focus {
+  border: 2px solid #4267B2;
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 0rem;
+}
+::-webkit-scrollbar-track {
+  background: #D3D3D3;
+  border-radius: 100vw;
+  margin-block: .5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D3D3D3;
+}
+
+.errorMessage {
+  color: red;
+  font-size: .8rem;
+}
